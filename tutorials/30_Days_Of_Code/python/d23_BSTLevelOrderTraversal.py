@@ -20,11 +20,14 @@ class Solution:
 
     def levelOrder(self, root):
         # Write your code here
-        d = [root]
-        while any(d):
-            print(*map(lambda n: n.data, d), sep=' ', end=' ')
-            c = sum([[a.left, a.right] for a in d], [])
-            d = list(filter(bool, c))
+        queue_ = [root]
+        while queue_:
+            data_ = queue_.pop(-1)
+            print(data_.data, end=' ')
+            if data_.left:
+                queue_.insert(0, data_.left)
+            if data_.right:
+                queue_.insert(0, data_.right)
 
 T = int(input())
 myTree = Solution()
