@@ -1,5 +1,5 @@
 /*
-Classes not present in C and hence cannot be solved
+Classes not present in C as it's an OOPS paradigm and hence cannot be solved.
 Have fun today!
 */
 
