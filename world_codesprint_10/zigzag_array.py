@@ -6,10 +6,10 @@ def minimumDeletions(a):
     try:
         while i < len_:
             if (a[i] < a[i+1] < a[i+2]) or (a[i] > a[i+1] > a[i+2]):
-                a.pop(i+2)
+                a.pop(i+1)
                 ctr += 1
                 recheck = 1
-                # print("first try 1", a)
+                # print(a)
             if recheck == 0:
                 i += 1
             else:
