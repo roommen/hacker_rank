@@ -13,6 +13,7 @@ int main()
 
     printf("Hello, World.\n");
 
+    //cout << inpString;
     // cout << "Welcome to 30 Days of Code!" << endl;
     printf("Welcome to 30 Days of Code!\n");
 
