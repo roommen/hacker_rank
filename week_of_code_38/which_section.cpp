@@ -20,21 +20,18 @@ int main(int argc, char **argv) {
         int ctr = 0;
         int first = 1;
         int second = v[0];
-        for(auto &x : v) {
-            // second = v[ctr];
-            cout << "first " << first << " second " << second << endl;
+    //    for(auto &x : v) {
+        // while()
+        for(auto it=v.begin(); it !=v.end(); it++) {
             if ((k >= first) && (k <= second))
             {
-                cout << ctr << endl;
+                cout << ctr+1 << endl;
                 break;
             }
             first = second + 1;
+            second = second + v[ctr+1];
             ++ctr;
-            second = v[ctr] + x;
-            // second = 
-            
         }
-
         --t;
     }
 
